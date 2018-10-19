@@ -1,0 +1,146 @@
+body {
+	font-family: 'Montserrat';
+	background: linear-gradient(#18453B, white);
+	height: 100;
+}
+
+hr{
+	border-top: 1px solid #f8f8f8;
+	width: 50%;
+	color: #97A2A2;
+}
+
+th{
+	background-color: #18453B;
+}
+
+table{
+	background-color: #535054;
+	color: white;
+}
+
+#landing-html{
+	height: 100%;
+}
+
+#landing-body{
+	background: url(/pictures/Campus.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#landing-content{
+	padding-top: 10%;
+	text-align: center;
+	color: white;
+}
+
+#landing-content>h1{
+	font-weight: bolder;
+	font-size: 5em;
+	text-shadow: 0px 4px 3px gray, 0px 8px 13px black;
+}
+
+#landing-content>h3{
+	font-weight: bold;
+	text-shadow: 0px 4px 3px gray, 0px 8px 13px black;
+}
+
+#lead{
+	background-color: black;
+}
+
+#formDescriptor{
+	float: left;
+	padding-right: 15px;
+}
+
+#locDescriptor{
+float: left;
+padding-left: 10px;
+}
+.navbar{
+	font-weight: bold;
+}
+
+.navbar-inverse {
+	background: #18453B;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a  {
+	color: white;
+}
+
+.landing-button{
+	color: #18453B;
+	border: solid 2px #18453B;
+}
+
+.panel{
+	border: 3px solid black;
+	height: 100%;
+    background-color: #535054;
+}
+
+.panel h3, .panel hr{
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+}
+
+.panel p{
+	font-size: 15px;
+	color: white;
+	min-height: 50%;
+}
+
+.panel-heading{
+	font-weight: bolder;
+}
+
+.panel-heading btn-group{
+	align-content: center;
+}
+
+.moveable{
+	font-weight: bold;
+	float: right;
+}
+
+.row.display-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.display-flex > [class*='col-']{
+    display: flex;
+    flex-direction: column;
+}
+
+.studentLookup{
+	float: left;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.jumbotron{
+	text-align: center;
+	color: white;
+	background: #535054;
+	height: 100vh;
+	width: 30%;
+	margin-left: 30%;
+}
+
+.jumbotron p{
+	float: left;
+	font-size: 15px;
+	min-height: 50%;
+}
+
+.jumbotron img{
+	height: 100%;
+	width: 100%;
+	max-width: 100%; 
+}

@@ -1,0 +1,514 @@
+<% include partials/header %>
+<% include partials/nav %>
+
+<div class="container">
+  <div class="row display-flex">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Home</div>
+        <div class="panel-body">
+          <p id="formDescriptor">Student Lookup:</p>
+          <form action="/assignments" method="POST" class="studentLookup">
+              <input class="form-control" name="name" type="text" placeholder="Full Name">
+          </form>
+          <p id="locDescriptor">Location: <%= loc %></p>
+          <h3>Notifications</h3>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="panel panel-default">
+       <!-- Default panel contents -->
+      <div class="panel-heading">Intern Directory</div>
+       <!-- Table -->
+        <table class="table">
+          <thead>
+            <th>Non-MSU Students</th>
+            <th>MSU Students</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Devin Wilcox</td>
+              <td>Andreas Frame<p class="moveable">(Moveable)</p></td>
+            </tr>
+            <tr>
+              <td>Elijah Sheridan<p class="moveable">(Moveable)</p></td>
+              <td>Brendan Walsh<p class="moveable">(Moveable)</p></td>
+            </tr>
+            <tr>
+              <td>Henry Martin</td>
+              <td>Christian Zawisza</td>
+            </tr>
+            <tr>
+              <td>Jackson Mcgee<p class="moveable">(Moveable)</p></td>
+              <td>Christopher Sweeley</td>
+            </tr>
+            <tr>
+              <td>Joshua Andrews</td>
+              <td>Daniel Greeson<p class="moveable">(Moveable)</p></td>
+            </tr>
+            <tr>
+              <td>Lily Hudson<p class="moveable">(Moveable)</p></td>
+              <td>Emily Stehouwer</td>
+            </tr>
+            <tr>
+              <td>Marshall Besko<p class="moveable">(Moveable)</p></td>
+              <td>Jacob Kalt<p class="moveable">(Moveable)</p></td>
+            </tr>
+            <tr>
+              <td>Omar Al-Mogahed</td>
+              <td>Jake Danell<p class="moveable">(Moveable)</p></td>
+            </tr>
+            <tr>
+              <td>Sita Belleville</td>
+              <td>Jon Spiwak<p class="moveable">(Moveable)</p></td>
+            </tr>
+            <tr>
+              <td>Teddy Zegers<p class="moveable">(Moveable)</p></td>
+              <td>Khalil Aljahmi</td>
+            </tr>
+            <tr>
+              <td>Usha Reddy<p class="moveable">(Moveable)</p></td>
+              <td>Lucas Hossi</td>
+            </tr>
+            <tr>
+              <td>William Loomis</td>
+              <td>Quinn Sheppard</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Sean O'Hare</td>
+            </tr>
+          </tbody>      
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Ag Hall (Room 416B)</div>
+
+         <!-- Table -->
+        <table class="table">
+          <thead>
+            <th id="lead">Lead:</th>
+            <th id="lead">Suporn Teng</th>
+          </thead>
+
+          <thead>
+            <th>Student</th>
+            <th>Status</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Brendan Walsh</td>
+              <td>
+                8/13-8/14
+              </td>
+            </tr>
+            <tr>
+              <td>Daniel Greeson</td>
+              <td>
+                8/13-8/17
+              </td>
+            </tr>
+            <tr>
+              <td>Jake Danell</td>
+              <td>
+                8/13-8/17
+              </td>
+            </tr>
+            <tr>
+              <td>Jacob Kalt</td>
+              <td>
+                8/13-8/17
+              </td>
+            </tr>
+            <tr>
+              <td>Christian Zawisza</td>
+              <td>
+                8/13-8/17
+              </td>
+            </tr>
+
+            <tr>
+              <td>Emily Stehouwer</td>
+              <td>
+                8/13-8/17
+              </td>
+            </tr>
+            <tr>
+              <td>Khalil Aljahmi</td>
+              <td>
+                8/13-8/17
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Clinical Center (Room A135)</div>
+
+         <!-- Table -->
+        <table class="table">
+          <thead>
+            <th id="lead">Lead:</th>
+            <th id="lead">K. Bailey</th>
+          </thead>
+
+          <thead>
+            <th>Student</th>
+            <th>Status</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Teddy Zegers</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+            <tr>
+              <td>Christopher Sweeley</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Computer Center (Room 504)</div>
+
+         <!-- Table -->
+        <table class="table">
+       	  <thead>
+            <th id="lead">Lead:</th>
+            <th id="lead">Kelli Hart</th>
+          </thead>
+
+          <thead>
+            <th>Student</th>
+            <th>Status</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Elijah Sheridan</td>
+              <td>
+                8/13-8/17
+              </td>
+            </tr>
+            <tr>
+              <td>Jackson Mcgee</td>
+              <td>
+                8/13-8/17
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Fee Hall Tech Bar (Room 526)</div>
+
+         <!-- Table -->
+        <table class="table">
+          <thead>
+            <th id="lead">Lead:</th>
+            <th id="lead">Joe Murray</th>
+          </thead>
+
+          <thead>
+            <th>Student</th>
+            <th>Status</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Usha Reddy</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+            <tr>
+              <td>Joshua Andrews</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+          </tbody>
+          </table>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Networking</div>
+
+         <!-- Table -->
+        <table class="table">
+          <thead>
+            <th id="lead">Lead:</th>
+            <th id="lead">Franke</th>
+          </thead>
+
+          <thead>
+            <th>Student</th>
+            <th>Status</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>William Loomis</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+            <tr>
+              <td>Lucas Hossi</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Telecom</div>
+
+         <!-- Table -->
+        <table class="table">
+          <thead>
+            <th id="lead">Lead:</th>
+            <th id="lead">Kwiatkowski</th>
+          </thead>
+
+          <thead>
+            <th>Student</th>
+            <th>Status</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Omar Al-Mohaged</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Computer Lab</div>
+
+         <!-- Table -->
+        <table class="table">
+          <thead>
+            <th id="lead">Lead:</th>
+            <th id="lead">Kwiatkowski</th>
+          </thead>
+
+          <thead>
+            <th>Student</th>
+            <th>Status</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Sita Belleville</td>
+              <td>
+                8/13-8/17  
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Data Analytics</div>
+
+         <!-- Table -->
+        <table class="table">
+          <thead>
+            <th id="lead">Lead:</th>
+            <th id="lead"></th>
+          </thead>
+
+          <thead>
+            <th>Student</th>
+            <th>Status</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Greg Margosian</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+            <tr>
+              <td>Marilyn Lalrindiki</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">IPF Tech Bar</div>
+
+         <!-- Table -->
+        <table class="table">
+          <thead>
+            <th id="lead">Lead:</th>
+            <th id="lead">Chad/Allen</th>
+          </thead>
+
+          <thead>
+            <th>Student</th>
+            <th>Status</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Jon Spiwak</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Data Center</div>
+
+         <!-- Table -->
+        <table class="table">
+          <thead>
+            <th id="lead">Lead:</th>
+            <th id="lead"></th>
+          </thead>
+          <thead>
+            <th>Student</th>
+            <th>Status</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Caleb Engle</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+            <tr>
+              <td>Shukuo Tsunoda</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Service Catalog</div>
+
+         <!-- Table -->
+        <table class="table">
+          <thead>
+            <th id="lead">Lead:</th>
+            <th id="lead">Wilcox/Seyka/Issawi</th>
+          </thead>
+
+          <thead>
+            <th>Student</th>
+            <th>Status</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Devin Wilcox</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+	<div class="col-md-3">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Mobile Dev</div>
+
+         <!-- Table -->
+        <table class="table">
+          <thead>
+            <th id="lead">Lead:</th>
+            <th id="lead"></th>
+          </thead>
+
+          <thead>
+            <th>Student</th>
+            <th>Status</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Dan Nakashima</td>
+              <td>
+                Full-Time
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include partials/footer %>
