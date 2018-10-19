@@ -52,12 +52,12 @@ table{
 
 #formDescriptor{
 	float: left;
-	padding-right: 15px;
+	padding-right: 4px;
 }
 
 #locDescriptor{
 float: left;
-padding-left: 10px;
+padding-left: 4px;
 }
 .navbar{
 	font-weight: bold;
